@@ -5,6 +5,11 @@ html, body {
 body {
   position: relative;
 }
+@media (max-width: 575px) {
+  body {
+    padding-top: 4rem;
+  }
+}
 header {
   height: 100%;
 }
@@ -25,9 +30,9 @@ header::after {
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
 }
-@media (max-width: 575px){
+@media (max-width: 575px) {
   header::after {
-      background-attachment: scroll;
+    background-attachment: scroll;
   }
 }
 .logo-first {
@@ -49,6 +54,12 @@ header::after {
 .scrollspy-offset {
   margin-top: -4rem;
   padding-top: 4rem;
+}
+@media (max-width: 575px) {
+  .scrollspy-offset {
+    margin-top: -15rem;
+    padding-top: 15rem;
+  }
 }
 main section {
   margin-top: 4rem;
