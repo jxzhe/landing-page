@@ -25,6 +25,11 @@ header::after {
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
 }
+@media (max-width: 575px){
+  header::after {
+      background-attachment: scroll;
+  }
+}
 .logo-first {
   color: white;
   font-weight: bold;
