@@ -51,7 +51,7 @@ header::after {
 #banner a:active {
   color: white;
 }
-#carouselSlogan img {
+.carousel-inner {
   border-radius: 2rem;
 }
 .scrollspy-offset {
