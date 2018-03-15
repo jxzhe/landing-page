@@ -76,7 +76,7 @@ header h2, header h3 {
   opacity: 75%;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 767px) {
   .slide-img {
     background-attachment: scroll;
   }
