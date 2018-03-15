@@ -1,13 +1,18 @@
-setInterval(dataWowOffset, 1000);
-function dataWowOffset() {
-    wow = document.getElementsByClassName("wow");
-    if (document.documentElement.clientWidth <= 575) {
-        for (var i = 0; i < wow.length; ++i) {
-            wow[i].setAttribute('data-wow-offset', '320');
+setInterval(navOffset, 500);
+function navOffset() {
+    navbarNav = document.getElementById('navbarNav');
+    nav = document.getElementsByClassName('nav-offset');
+    if (navbarNav.classList.contains('show')) {
+        for (var i = 0; i < nav.length; ++i) {
+            nav[i].style.marginTop = '-13rem';
+            nav[i].style.paddingTop = '13rem';
         }
+        document.body.setAttribute('data-offset', '144'); // somehow not working
     } else {
-        for (var i = 0; i < wow.length; ++i) {
-            wow[i].setAttribute('data-wow-offset', '128');
+        for (var i = 0; i < nav.length; ++i) {
+            nav[i].style.marginTop = '-4rem';
+            nav[i].style.paddingTop = '4rem';
         }
+        document.body.setAttribute('data-offset', '0'); // somehow not working
     }
 }
