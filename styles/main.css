@@ -30,6 +30,12 @@ header::after {
   background-image: url("../images/header.jpg");
   background-attachment: fixed;
 }
+header h1 {
+  font-family: 'Merienda One'
+}
+header h2 {
+  font-family: 'Merienda';
+}
 @media (max-width: 575px) {
   header::after {
     background-attachment: scroll;
