@@ -113,44 +113,14 @@ a.carousel-control-prev, a.carousel-control-next {
 main section h2 {
   margin: 2rem 0;
 }
-.content-why {
-  z-index: -1;
-  padding: 0;
-  height: 700px;
-  background-image: url("../images/content-why-img-1.jpg");
-  background-size: cover;
-  color: rgb(137, 255, 160);
-}
-.content-features {
-  z-index: -1;
-  padding: 0;
-  height: 700px;
-  background-image: url("../images/content-features-img-1.jpg");
-  background-size: cover;
-  color: rgb(110, 136, 252);
-}
-.content-pricing {
-  z-index: -1;
-  padding: 0;
-  height: 700px;
-  background-image: url("../images/content-pricing-img-1.jpg");
-  background-size: cover;
-  color: rgb(240, 240, 240);
-}
-
-.content-about {
-  padding: 0;
-  height: 250px;
-  background-color: #f7f7f7;
-  color: #666;
-}
-.content-about p {
-  margin: 1rem;
-}
 
 footer {
-  font-size: 3rem;
+  background-color: #f7f7f7;
+  margin: 3rem 0 0 0;
+  padding: 3rem;
+  color: #666;
 }
-footer i {
-  margin-right: 1rem;
+
+footer p {
+  margin: 1rem;
 }
