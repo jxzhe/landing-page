@@ -2,16 +2,15 @@ setInterval(navOffset, 500);
 
 function navOffset() {
     navbarNav = document.getElementById('navbarNav');
-    sections = document.querySelectorAll('main section')
     if (navbarNav.classList.contains('show')) {
-        for (var i = 0; i < sections.length; ++i) {
-            sections[i].style.marginTop = '-13rem';
-            sections[i].style.paddingTop = '13rem';
-        }
+        document.styleSheets[0].addRule('main section::before', 'top: 13rem !important;');
+        document.styleSheets[0].addRule('main section::after', 'top: 13rem !important;');
+        document.styleSheets[0].addRule('main section', 'margin-top: -13rem !important;');
+        document.styleSheets[0].addRule('main section', 'padding-top: 14rem !important;');
     } else {
-        for (var i = 0; i < sections.length; ++i) {
-            sections[i].style.marginTop = '-3.5rem';
-            sections[i].style.paddingTop = '4.5rem';
-        }
+        document.styleSheets[0].addRule('main section::before', 'top: 3.5rem !important;');
+        document.styleSheets[0].addRule('main section::after', 'top: 3.5rem !important;');
+        document.styleSheets[0].addRule('main section', 'margin-top: -3.5rem !important;');
+        document.styleSheets[0].addRule('main section', 'padding-top: 4.5rem !important;');
     }
 }
