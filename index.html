@@ -11,18 +11,19 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda|Merienda+One">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
   <link rel="stylesheet" href="styles/main.css">
 
   <title>CHORDEAR</title>
 </head>
 
-<body data-spy="scroll" data-target="#nav" data-offset="0">
+<body class="position-relative" data-spy="scroll" data-target="#nav" data-offset="0">
   <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
-    <a class="navbar-brand" id="titleName" href="#">
-      <span class="logo-first">CHORD</span>
-      <span class="logo-last">EAR</span>
+    <a class="navbar-brand" href="#">
+      <span class="float-left font-weight-bold text-white">CHORD</span>
+      <span class="float-left font-weight-bold text-warning">EAR</span>
     </a>
+
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,13 +42,14 @@
   </nav>
 
   <header>
-    <div id="banner">
-      <h1 class="display-4 banner-text">CHORDEAR</h1>
-      <h2 class="lead banner-text">hear the harmony</h2>
-      <br>
-      <a class="btn btn-warning btn-lg" href="#">
-        <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;Get Notified When Available</a>
+    <div id="banner" class="position-absolute text-white text-center">
+      <h1 class="display-4 text-shadow font-weight-bold">CHORDEAR</h1>
+      <h2 class="lead text-shadow">hear the harmony</h2>
+      <a class="btn btn-warning btn-lg mt-3" href="#">
+        <i class="fa fa-bullhorn" aria-hidden="true"></i>&nbsp;&nbsp;Get Notified When Available
+      </a>
     </div>
+
     <div id="carouselSlogan" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner" role="listbox">
         <ol class="carousel-indicators">
@@ -56,19 +58,19 @@
           <li data-target="#carouselSlogan" data-slide-to="2"></li>
         </ol>
         <div class="carousel-item active">
-          <div id="slide1" class="slide-img"></div>
+          <div class="slide-img"></div>
           <div class="carousel-caption d-block">
             <h3>Listen to a song</h3>
           </div>
         </div>
         <div class="carousel-item">
-          <div id="slide2" class="slide-img"></div>
+          <div class="slide-img"></div>
           <div class="carousel-caption d-block">
-            <h3 class="text-white" style="text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.3), 0 0 1rem rgba(0, 0, 0, 0.7)">Understand the chords</h3>
+            <h3 class="text-white text-shadow">Understand the chords</h3>
           </div>
         </div>
         <div class="carousel-item">
-          <div id="slide3" class="slide-img"></div>
+          <div class="slide-img"></div>
           <div class="carousel-caption d-block">
             <h3>Use them in your music</h3>
           </div>
@@ -85,60 +87,68 @@
     </div>
   </header>
 
-  <main class="container-fluid text-center">
-    <section id="Why" class="row justify-content-center nav-offset content-why">
-      <div class="col-lg-7 wow bounceInDown" data-wow-duration="0.8s" data-wow-offset="128">
-        <h2 class="display-4">Why?</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos blanditiis, porro modi tempore iste quis id aperiam
-          impedit, recusandae officiis voluptatum! Aliquam dolores cupiditate praesentium corporis beatae inventore, animi
-          recusandae!
+  <main class="container text-center mt-5">
+    <section id="Why" class="row justify-content-center mb-4">
+      <div class="col-10 wow fadeIn" data-wow-duration="0.8s" data-wow-offset="128">
+        <h2 class="display-4 my-4">Why?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto non nemo natus dolorum quidem vero cupiditate,
+          qui laudantium adipisci quia ullam perspiciatis odit? Numquam consectetur incidunt quia distinctio vitae! Lorem
+          ipsum, dolor sit amet consectetur adipisicing elit. Et, ratione deleniti! Ex possimus dolores animi voluptas dicta
+          reprehenderit velit provident adipisci quod, voluptate molestias corrupti dignissimos obcaecati. Inventore, deserunt
+          provident.
         </p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt tempore facilis temporibus quasi quidem corporis
-          consectetur provident quibusdam inventore, repellat facere ea numquam illo. Voluptatibus aliquam earum distinctio
-          iure suscipit.</p>
       </div>
-      <div class="col-lg-5"></div>
     </section>
 
-    <section id="Features" class="row justify-content-center nav-offset content-features flex-lg-row-reverse">
-      <div class="col-lg-7 wow bounceInUp" data-wow-duration="0.8s" data-wow-offset="128">
-        <h2 class="display-4">Features</h2>
+    <section id="Features" class="row justify-content-center mb-4">
+      <div class="col-10 wow fadeIn" data-wow-duration="0.8s" data-wow-offset="128">
+        <h2 class="display-4 my-4">Features</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis eveniet quos non tenetur molestiae similique fuga
           nemo optio molestias id dicta natus labore obcaecati nisi necessitatibus, aliquid soluta consequuntur temporibus.
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro dolor cumque deleniti architecto, quidem
-          nesciunt iure debitis obcaecati totam provident est accusamus consequuntur rem eius atque dolores autem quo?
+          nesciunt iure debitis obcaecati totam provident est accusamus consequuntur rem eius atque dolores autem quo? Lorem
+          ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eos aperiam, dolor quae commodi debitis aut cumque
+          ipsum et reiciendis odio ipsam ducimus, optio fuga, velit ex quo. Ratione, ad?
         </p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis eos aperiam, dolor quae commodi debitis aut
-          cumque ipsum et reiciendis odio ipsam ducimus, optio fuga, velit ex quo. Ratione, ad?</p>
       </div>
-      <div class="col-lg-5"></div>
     </section>
 
-    <section id="Pricing" class="row justify-content-center nav-offset content-pricing">
-      <div class="col-10 col-lg-8 wow bounceInDown" data-wow-duration="0.8s" data-wow-offset="128">
-        <h2 class="display-4">Pricing</h2>
+    <section id="Pricing" class="row justify-content-center mb-4">
+      <div class="col-10 wow fadeIn" data-wow-duration="0.8s" data-wow-offset="128">
+        <h2 class="display-4 my-4">Pricing</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quaerat sit quia cupiditate repellat incidunt autem,
-          iure deleniti nihil aperiam sapiente sunt ipsam fuga in asperiores sed temporibus voluptate commodi.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex expedita nihil voluptatum maxime adipisci esse commodi
-          delectus a ullam, excepturi nesciunt iste placeat voluptas facere distinctio ut odio dolores tempora!</p>
-      </div>
-    </section>
-
-    <section id="About" class="row justify-content-center pulse nav-offset content-about" data-wow-duration="0.4s" data-wow-offset="128">
-      <div class="col-10 col-lg-8 wow pulse" data-wow-duration="0.8s" data-wow-offset="128">
-        <h2>About</h2>
-        <p>We are students who believe can make the world a little bit better by writing good software.</p>
+          iure deleniti nihil aperiam sapiente sunt ipsam fuga in asperiores sed temporibus voluptate commodi. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Ex expedita nihil voluptatum maxime adipisci esse commodi delectus
+          a ullam, excepturi nesciunt iste placeat voluptas facere distinctio ut odio dolores tempora! Lorem ipsum dolor
+          sit amet consectetur adipisicing elit. Ad aut sunt, temporibus quis earum adipisci ut consequuntur suscipit voluptas
+          ex nobis facilis quo excepturi, illum ratione incidunt quam ducimus qui.
+        </p>
       </div>
     </section>
   </main>
 
-  <footer id="Share">
-    <p class="text-center">
-      <i class="fas fa-share" style="margin-right:2rem;"></i>
-      <i class="fab fa-facebook" style="color:#3b5998;"></i>
-      <i class="fab fa-twitter-square" style="color:#00aced;"></i>
-      <i class="fab fa-line" style="color:#03c302;"></i>
-    </p>
+  <footer class="container-fluid text-center bg-light mt-5 pt-5 pb-3">
+    <div id="About" class="row justify-content-center">
+      <div class="col-10">
+        <h3 class="display-4">About</h3>
+        <div class="my-4">
+          We are students who believe can make the world a little bit better by writing good software.
+        </div>
+        <div style="font-size:3rem;letter-spacing:0.5rem">
+          <a href="#">
+            <i class="fas fa-share text-dark"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook" style="color:#3b5998;"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter-square" style="color:#00aced;"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-line" style="color:#03c302;"></i>
+          </a>
+        </div>
+      </div>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
