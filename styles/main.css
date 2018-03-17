@@ -69,15 +69,15 @@ header h3 {
   }
 }
 
-.carousel-inner>div:nth-of-type(1)>:first-child {
+#slide-1 {
   background-image: url("../images/slide1.jpg");
 }
 
-.carousel-inner>div:nth-of-type(2)>:first-child {
+#slide-2 {
   background-image: url("../images/slide2.jpg");
 }
 
-.carousel-inner>div:nth-of-type(3)>:first-child {
+#slide-3 {
   background-image: url("../images/slide3.jpg");
 }
 
@@ -89,6 +89,7 @@ main section {
   margin-top: -3.5rem;
   padding-top: 4.5rem;
   position: relative;
+  min-height: 40rem;
 }
 
 main section::before {
@@ -132,15 +133,15 @@ main section::after {
   }
 }
 
-main section:nth-of-type(1)::after {
+#Why::after {
   background-image: url("../images/content-why-img-1.jpg");
 }
 
-main section:nth-of-type(2)::after {
+#Features::after {
   background-image: url("../images/content-features-img-1.jpg");
 }
 
-main section:nth-of-type(3)::after {
+#Pricing::after {
   background-image: url("../images/content-pricing-img-1.jpg");
 }
 
