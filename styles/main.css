@@ -90,6 +90,7 @@ main section {
   padding-top: 4.5rem;
   position: relative;
   font-size: 1.2rem;
+  /* background: gree */
 }
 
 main section::before {
