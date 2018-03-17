@@ -9,7 +9,7 @@ body {
 }
 
 header h1 {
-  font-family: 'Merienda One'
+  font-family: 'Merienda One';
 }
 
 header h2,
@@ -106,7 +106,7 @@ main section::before {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  background: #00000087;
+  background: #000000ab;
 }
 
 main section::after {
@@ -132,23 +132,44 @@ main section::after {
   }
 }
 
-main section:nth-of-type(1)::after {
+#Why::after {
   background-image: url("../images/content-why-img-1.jpg");
 }
 
-main section:nth-of-type(2)::after {
+#Features::after {
   background-image: url("../images/content-features-img-1.jpg");
 }
 
-main section:nth-of-type(3)::after {
+#Pricing::after {
   background-image: url("../images/content-pricing-img-1.jpg");
+}
+
+#About {
+  background-color: #fcfcfc;
 }
 
 main section>div {
   padding: 1rem 0 2rem 0;
 }
+main section h2 {
+  font-family: 'Merienda One';
+}
+.content {
+  line-height: 2.5rem;
+  font-family: 'Merienda';
+  font-size: 1.5rem;
+}
 
 footer a,
 footer a:hover {
   text-decoration: none;
+}
+footer a {
+  margin-right: 1rem;
+}
+footer h3 {
+  font-family: 'Merienda One';
+}
+footer {
+  background-color: #00000013;
 }
