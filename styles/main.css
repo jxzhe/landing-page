@@ -151,6 +151,9 @@ main section::after {
 
 #About {
   background-color: #fcfcfc;
+  border-radius: 8rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 #About span {
